@@ -1,0 +1,16 @@
+chains:
+  - chain: bitcoin
+    rpc_url: https://svc.blockdaemon.com/bitcoin/mainnet/native
+    apiKey: ""  # Set via environment variable
+    start_from: 904483
+    batch_size: 5
+  - chain: ethereum
+    rpc_url: https://svc.blockdaemon.com/ethereum/mainnet/native
+    apiKey: ""  # Set via environment variable
+    start_from: 18832300
+    batch_size: 5
+  - chain: solana
+    rpc_url: https://svc.blockdaemon.com/solana/mainnet/native
+    apiKey: ""  # Set via environment variable
+    start_from: 904483
+    batch_size: 5
