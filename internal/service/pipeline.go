@@ -32,6 +32,8 @@ func RunPipelineFromYAML(ctx context.Context, cfg *config.AppConfig, producer ka
 			fetcher = crypto.NewBitcoinFetcher(c.RPCUrl, c.APIKey)
 		case model.ChainEthereum:
 			fetcher = crypto.NewEthereumFetcher(c.RPCUrl, c.APIKey)
+		case model.ChainSolana:
+			fetcher = crypto.NewSolanaFetcher(c.RPCUrl, c.APIKey)
 		default:
 			fmt.Printf("unsupported chain: %s\n", c.Chain)
 			continue
